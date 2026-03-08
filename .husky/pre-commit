@@ -1,6 +1,23 @@
 echo "==================================="
-echo "✅ HUSKY SEDANG BEKERJA!"
+echo "🚀 Husky: Menjalankan pre-commit hook..."
 echo "==================================="
-echo "Menjalankan pre-commit hook..."
-echo "Waktu: $(date)"
+
+echo "📦 Menjalankan lint-staged..."
+echo ""
+
+# Jalankan lint-stagedsss
+npx lint-staged
+
+# Cek apakah lint-staged sukses atau gagal
+if [ $? -eq 0 ]; then
+    echo ""
+    echo "✅ lint-staged: Semua pemeriksaan berhasil!"
+else
+    echo ""
+    echo "❌ lint-staged: Ada error! Perbaiki dulu ya..."
+    exit 1
+fi
+
+echo "==================================="
+echo "✅ Pre-commit hook selesai"
 echo "==================================="
