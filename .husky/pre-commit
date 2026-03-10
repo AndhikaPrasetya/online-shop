@@ -6,7 +6,7 @@ echo "📦 Menjalankan lint-staged..."
 echo ""
 
 # Jalankan lint-stagedsss
-npx lint-staged && npx run build
+npx lint-staged && npm run build
 
 # Cek apakah lint-staged sukses atau gagal
 if [ $? -eq 0 ]; then
