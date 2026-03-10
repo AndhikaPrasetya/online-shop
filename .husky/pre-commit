@@ -6,7 +6,7 @@ echo "📦 Menjalankan lint-staged..."
 echo ""
 
 # Jalankan lint-stagedsss
-npx lint-staged
+npx lint-staged && npx run build
 
 # Cek apakah lint-staged sukses atau gagal
 if [ $? -eq 0 ]; then
@@ -20,4 +20,4 @@ fi
 
 echo "==================================="
 echo "✅ Pre-commit hook selesai"
-echo "==================================="
+echo "==================================="b
